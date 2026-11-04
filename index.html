@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Suivi des déchets · campagne 2026</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="no-data">
+  <header class="topbar">
+    <div>
+      <h1>Suivi des déchets · campagne 2026</h1>
+      <p id="sourceInfo" class="muted"></p>
+    </div>
+    <div>
+      <button id="btnImport" class="btn btn-primary" type="button">Importer un fichier</button>
+    </div>
+  </header>
+
+  <section class="filters" aria-label="Filtres">
+    <div id="multiFilters" class="multi-filters"></div>
+    <label class="filter">
+      <span class="filter-label">Dénomination usuelle</span>
+      <select id="fDenom"></select>
+    </label>
+    <label class="filter">
+      <span class="filter-label">Statut du bordereau</span>
+      <select id="fStatut"></select>
+    </label>
+    <label class="filter">
+      <span class="filter-label">Type de bordereau</span>
+      <select id="fType"></select>
+    </label>
+    <div class="filter filter-dates">
+      <span class="filter-label">Date d'expédition (du / au)</span>
+      <div class="dates">
+        <input id="fDateFrom" type="date" aria-label="Date d'expédition, à partir du">
+        <input id="fDateTo" type="date" aria-label="Date d'expédition, jusqu'au">
+      </div>
+    </div>
+    <label class="filter">
+      <span class="filter-label">Recherche libre</span>
+      <input id="fSearch" type="search" placeholder="N° bordereau, destination, code…" autocomplete="off">
+    </label>
+    <button id="btnReset" class="btn btn-ghost" type="button">Réinitialiser</button>
+  </section>
+
+  <nav id="tabs" class="tabs" aria-label="Vues"></nav>
+  <div id="flash" class="flash" role="status" hidden></div>
+  <main id="view"></main>
+
+  <input id="fileInput" type="file" accept=".csv,.txt,.xlsx,text/csv" hidden>
+
+  <script src="js/csv.js"></script>
+  <script src="js/model.js"></script>
+  <script src="js/format.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
