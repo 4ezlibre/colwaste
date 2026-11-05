@@ -1,6 +1,6 @@
 # Suivi des déchets · campagne 2026
 
-Tableau de bord statique (HTML, CSS, JavaScript vanilla, aucune dépendance, aucun serveur) qui reprend le classeur `DD-CIDFN-campagne2026.xlsx`.
+Tableau de bord statique (HTML, CSS, JavaScript vanilla, aucune dépendance, aucun serveur) qui reprend le classeur template Trackdéchet.
 
 ## Fonctionnement
 
