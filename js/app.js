@@ -73,7 +73,7 @@
   };
 
   const nfInt = new Intl.NumberFormat('fr-FR');
-  const nf2 = new Intl.NumberFormat('fr-FR', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+  const nf2 = new Intl.NumberFormat('fr-FR', { minimumFractionDigits: 3, maximumFractionDigits: 3 });
   const nf3 = new Intl.NumberFormat('fr-FR', { minimumFractionDigits: 3, maximumFractionDigits: 3 });
   const nfPct = new Intl.NumberFormat('fr-FR', { maximumFractionDigits: 1 });
 
